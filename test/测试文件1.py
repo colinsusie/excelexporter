@@ -7,6 +7,7 @@ define = [
 	['整型', 'i', Int()],
 	['浮点数', 'fl', Float()],
 	['字符串', 'str', Str()],
+	['字符串2', 'str2', Str()],
 	['布尔值', 'bo', Bool()],
 	['列表', 'li', List(Str())],
 	['列表2', 'li2', List(List(Int(), ","), "|")],

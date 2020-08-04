@@ -202,7 +202,11 @@ def make_table(excel_file, excel_sheet, define_module, sheet_name):
 				col_name = col_list[col]
 				define_item = col_defines.get(col_name, None)
 				if define_item:
-					value = str(excel_sheet.cell(row, col).value)
+					value = excel_sheet.cell(row, col).value
+					if type(value) == float and int(value) == value:
+						value = str(int(value))
+					else:
+						value = str(value)
 					if define_item[1] == key_name:
 						if value == '':
 							key_value = None

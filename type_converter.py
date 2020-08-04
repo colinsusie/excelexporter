@@ -18,10 +18,8 @@ class Int(Converter):
 		try:
 			if data == '':
 				d = self.get_default()
-			elif type(data) == str:
-				d = int(float(data))
 			else:
-				d = int(data)
+				d = int(float(data))
 		except Exception as e:
 			raise ConvertError(self.get_error_desc(data)) from e
 		return d
