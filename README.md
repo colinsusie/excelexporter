@@ -4,10 +4,10 @@
 
 这个工具最早为python2所写，但是python2在字符编码方面存在一些缺陷，加之python2今年已经不再维护了，所以我把它改成只支持python3，并把它开源出来。
 
-除了python3，还需要安装一个库`xlrd`，这个库用于操作Excel：
+除了python3，还依赖于`sxl`，这个库用于读Excel的数据：
 
 ```sh
-sudo pip3 install xlrd
+sudo pip3 install sxl
 ```
 
 ## 使用指南
