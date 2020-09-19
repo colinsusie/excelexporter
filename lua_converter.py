@@ -105,8 +105,7 @@ def convert_lua_strip(table, save_path, define_module):
 		"""生成列索引字符串:"""
 		str = "local key_map = {\n"
 		for i, item in enumerate(define_items):
-			str += "\t-- {}\n".format(item[0])
-			str += "\t{} = {},\n".format(item[1], i+1)
+			str += "\t{} = {}, -- {}\n".format(item[1], i+1, item[0])
 		str += "}"
 		return str
 

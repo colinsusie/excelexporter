@@ -103,8 +103,7 @@ def convert_js_strip(table, save_path, define_module):
 		"""生成列索引字符串:"""
 		str = "var KeyMap = {\n"
 		for i, item in enumerate(define_module):
-			str += "\t// {}\n".format(item[0])
-			str += "\t{} : {},\n".format(item[1], i)
+			str += "\t{} : {},  // {}\n".format(item[1], i, item[0])
 		str += "};"
 		return str
 
