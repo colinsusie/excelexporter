@@ -12,10 +12,10 @@ config = {
 	"source": "测试文件2.xlsx",
 	"sheet": "Sheet1",
 	"target": [
-		["./out/test2.js", "js", ET_OPT],
-		["./out/test2.lua", "lua", ET_OPT],
-		["./out/test2.json", "json"],
-		["./out/test2.py", "py"],
+		["./test2.js", "js", ET_OPT],
+		["./test2.lua", "lua", ET_OPT],
+		["./test2.json", "json"],
+		["./test2.py", "py"],
 	],
 	"key": "no",
 }

@@ -37,7 +37,7 @@ optional arguments:
 # 导出test目录里的定义文件，并且强制全导
 python3 excel_exporter.py -p ./test -a 1
 # 只导一个具体的定义文件
-python3 excel_exporter.py -p ./test/test1.py
+python3 excel_exporter.py -p ./test/测试文件1.py
 ```
 
 `-a`如果不指定，则只导那些修改过的，哪些算修改过的呢：

@@ -19,10 +19,10 @@ config = {
 	"source": "测试文件1.xlsx",
 	"sheet": "Sheet1",
 	"target": [
-		["./out/test1.js", "js"],
-		["./out/test1.lua", "lua"],
-		["./out/test1.json", "json"],
-		["./out/test1.py", "py"],
+		["./test1.js", "js"],
+		["./test1.lua", "lua"],
+		["./test1.json", "json"],
+		["./test1.py", "py"],
 	],
 	"key": "no"
 }
